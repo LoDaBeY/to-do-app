@@ -1,0 +1,83 @@
+.todolist {
+  padding: 10px;
+  width: 30%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transform: translateY(100px);
+  margin-bottom: 30px;
+  margin-top: 30px;
+  animation: rotate 1s 1;
+  border-bottom: white 1px solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Name {
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.Icons {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+
+}
+
+.EditIcon,
+.CloseIcon {
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0px);
+  }
+}
+
+
+.submit {
+  text-align: center;
+  transform: translateY(150px);
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#textid {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 35%;
+  outline: none;
+  animation: rotate 1s 1;
+  padding: 15px;
+}
+
+#submitt {
+  width: 22%;
+  padding: 6px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  animation: rotate 1s 1;
+}
+
+#submitt:hover {
+  color: rgb(212, 138, 27);
+  transition: 0.4s;
+  box-shadow: 0 0 3px cyan;
+}

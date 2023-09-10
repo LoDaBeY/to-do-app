@@ -1,0 +1,74 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.884);
+  color: white;
+  align-items: center;
+  animation: mymove 1s 1;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 15px;
+  cursor: pointer;
+  animation: ltr 1s 1;
+  transition: 0.5s;
+}
+
+h1:hover {
+  color: cyan;
+  transition: 2s;
+}
+
+
+.MainMenu {
+  display: flex;
+  padding: 5px 10px;
+  margin: 3px;
+  position: relative;
+}
+.MainMenu li {
+  list-style: none;
+}
+.MainMenu li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 35px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.sub-ul {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.884);
+  text-align: center;
+  margin: 28px;
+  border-radius: 20px;
+  overflow: hidden;
+  border-top: 3px transparent black;
+  top: 4px;
+  transition: 4s;
+}
+.sub-ul li {
+  margin: 5px 2px;
+  padding: 15px;
+  border-bottom: black solid 1px;
+}
+.sub-ul li a {
+  margin: 5px 2px;
+  padding: 7px;
+}
+
+.MainMenu li a:hover {
+  color: cyan;
+  transition: 0.4s;
+  box-shadow: 0 0 3px cyan;
+}
+
+.MainMenu li:hover .sub-ul {
+  display: block;
+}
+.sub-ul li a:hover {
+  box-shadow: none;
+}
